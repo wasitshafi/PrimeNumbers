@@ -13,11 +13,11 @@ def setPrimes(arr, n): # Time Complexity O(N Log(Log N))
 def printPrimes(arr, n):
   for i in range(n + 1):
     if arr[i] == 0:
-      print(i, endl=' ')
-
+      print(i, end=' ')
+      
 n = int(input('Enter Value of n... '))
 assert(n >= 0)
 arr = [0] * (n + 1)
 setPrimes(arr, n)
-print('Prime numbers upto ', n, ' are as : ')
-print(arr)
+print('Prime numbers upto ', n, ' are as : ', end='')
+printPrimes(arr, n)
